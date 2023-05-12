@@ -1,0 +1,47 @@
+{
+    "manifestVersion": 1,
+    "id": "file-to-variable",
+    "publisher": "docmalvado",
+    "version": "1.1.0",
+    "name": "File to variable",
+    "description": "This task allows you to create a variable with the content of a file.",
+    "public": true,
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "src"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "src"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "screenshots": [
+        {
+            "path": "images/options.png"
+        }
+    ]
+}

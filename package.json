@@ -1,0 +1,20 @@
+{
+  "name": "file-to-variable",
+  "version": "1.1.0",
+  "description": "This task allows you to create a variable with the content of a file.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run build:task && tfx extension create --manifest-globs vss-extension.json",
+    "build:task": "cd src && npm run build",
+    "publish": "tfx extension publish --manifest-globs vss-manifest.json"
+  },
+  "keywords": [],
+  "author": "Andrés Lavado",
+  "license": "gpl-3.0",
+  "devDependencies": {
+    "tfx-cli": "0.9.2"
+  },
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
